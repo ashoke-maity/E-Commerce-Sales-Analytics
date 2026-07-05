@@ -131,7 +131,7 @@ Documentation/Data_model.png
 
 ---
 
-# 🧹 Data Cleaning
+# Data Cleaning
 
 The following preprocessing steps were performed in PostgreSQL:
 
@@ -145,12 +145,12 @@ The following preprocessing steps were performed in PostgreSQL:
 
 ---
 
-# 📈 Dashboard Preview
+# Dashboard Preview
 
-> *(Insert dashboard screenshot here)*
+![Dashboard Preview](Dashboard%20Screenshot/Dashboard%20Overview.png)
 
 ```
-Dashboard Screenshots/Executive Dashboard.png
+Dashboard Screenshots/Dashboard Overview.png
 ```
 
 ---
