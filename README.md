@@ -111,7 +111,7 @@ Tables included:
 
 ### ER Diagram
 
-> *(Insert ER Diagram image here)*
+![ER Diagram](Documentation/E-R Diagram.png)
 
 ```
 Documentation/E-R Diagram.png
