@@ -123,10 +123,10 @@ Documentation/ER_diagram.png
 
 The dashboard uses a star-like relational model built from the PostgreSQL database.
 
-> *(Insert Power BI Model screenshot here)*
+![Power BI Data Model](Documentation/Data_model.png)
 
 ```
-Documentation/Power BI Data Model.png
+Documentation/Data_model.png
 ```
 
 ---
