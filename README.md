@@ -114,7 +114,7 @@ Tables included:
 ![ER Diagram](Documentation/ER_diagram.png)
 
 ```
-Documentation/E-R Diagram.png
+Documentation/ER_diagram.png
 ```
 
 ---
