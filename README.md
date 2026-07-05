@@ -135,13 +135,12 @@ Documentation/Data_model.png
 
 The following preprocessing steps were performed in PostgreSQL:
 
-- Removed unnecessary columns
+- Removed Duplicated values
 - Converted data types
-- Handled NULL values
 - Created Primary Keys
 - Created Foreign Keys
-- Separated staging and production schemas
-- Validated data integrity
+- Separated Raw, staging and production schemas
+- Validated data integrity.
 
 ---
 
@@ -155,7 +154,7 @@ Dashboard Screenshots/Dashboard Overview.png
 
 ---
 
-# 📊 Dashboard Features
+# Dashboard Features
 
 ### Executive KPIs
 
@@ -163,10 +162,16 @@ Dashboard Screenshots/Dashboard Overview.png
 - Total Orders
 - Total Customers
 - Average Order Value
+- Average Product Price
+- Average Shipping Charges
 
 ### Visualizations
 
-- Revenue Trend
+- Total Revenue
+- Total Orders
+- Total Number of Customers
+- Average Oder price
+- Total revenue by month year
 - Revenue by Product Category
 - Payment Type Distribution
 - Order Status Analysis
@@ -186,11 +191,7 @@ The dashboard uses reusable DAX measures including:
 - Average Product Price
 - Average Shipping Charges
 
-Detailed formulas are available in:
-
-```
-Power BI/DAX_Measures.md
-```
+Detailed formulas are available in: [DAX Measures](Power%20BI/DAX_Measures.md)
 
 ---
 
@@ -204,36 +205,33 @@ Some insights generated from the dashboard include:
 - Order status breakdown.
 - Payment method preferences.
 
-Detailed insights are available in:
-
-```
-Insights/Business_Insights.md
-```
+Detailed insights are available in: [Business Insights](Insights/Business_Insights.md)
 
 ---
 
-# 🚀 How to Run
+# How to Run
 
-1. Download the dataset.
-2. Execute the SQL scripts in the `SQL` folder.
-3. Import the cleaned tables into Power BI.
-4. Open the `.pbix` file.
-5. Refresh the data source if required.
+1. Create three schemas named as (raw_data, stagging and main) inside PostgreSQL (NeonDB).
+1. Download the raw datasets.
+2. Import the raw datasets into PostgreSQL (NeonDB) inside the raw_data schema.
+3. Execute the SQL scripts in the `SQL` folder for stagging schema.
+4. Import the cleaned data into the main schema by the SQL scripts from the `SQL` folder.
+5. Use Import method to import the cleaned tables into Power BI.
+6. Open the `Main_Dashboard.pbix` file.
+7. Check for the Data Model view tab for all the relations between the tables.
+8. Refresh the data source if required.
 
 ---
 
 # 📷 Project Screenshots
 
-| Dashboard |
-|-----------|
-| *(Insert Dashboard Screenshot)* |
+[Dashboard Overview](Dashboard%20Screenshot/Dashboard%20Overview.png)
 
 ---
 
-# 📚 Skills Demonstrated
+# Skills Demonstrated
 
-- SQL
-- PostgreSQL
+- SQL/PostgreSQL
 - Data Cleaning
 - Data Modeling
 - Relational Database Design
@@ -245,14 +243,16 @@ Insights/Business_Insights.md
 
 ---
 
-# 👨‍💻 Author
+# Author
 
-**Your Name**
+**Ashoke Maity**
 
-LinkedIn: *(Your LinkedIn URL)*
+**LinkedIn**: [Visit](www.linkedin.com/in/ashokemaity)
 
-GitHub: *(Your GitHub Profile URL)*
+**GitHub**: [Visit](https://github.com/ashoke-maity)
+
+**Portfolio**: [Visit](https://ashoke-portfolio.vercel.app)
 
 ---
 
-## ⭐ If you found this project helpful, consider giving it a star!
+## Thank You
